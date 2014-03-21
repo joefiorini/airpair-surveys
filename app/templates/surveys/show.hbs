@@ -1,12 +1,6 @@
 <h3>{{name}}</h3>
 
-<h4>Questions</h4>
-<ul>
-{{#each questions}}
-  <li>{{question}}</li>
-{{/each}}
-</ul>
+<h4>Next Question</h4>
+{{nextQuestion.question}}
+<button {{action markAnswered nextQuestion}}>Mark as Answered</button>
 <p>{{link-to 'Edit' 'surveys.edit' this}} <button {{action destroyRecord this}}>Destroy</button></p>
-
-<ul>
-</ul>

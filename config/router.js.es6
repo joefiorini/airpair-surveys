@@ -18,6 +18,9 @@ Router.map(function() {
     this.route('new');
     this.route('show', {path: ':survey_id'});
     this.route('edit', {path: ':survey_id/edit'});
+    // this.resource('questions', {path: ':survey_id/questions'}, function() {
+    //   this.route('show', {path: ':question_id'});
+    // });
   });
 });
 
