@@ -1,0 +1,14 @@
+<h3>Index</h3>
+
+<p>{{link-to 'New survey' 'surveys.new'}}</p>
+
+<table>
+  <tr>
+    <th>name</th>
+  </tr>
+  {{#each}}
+    <tr>
+      <td>{{link-to name 'surveys.show' this}}</td>
+    </tr>
+  {{/each}}
+</table>

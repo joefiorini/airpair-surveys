@@ -9,6 +9,16 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('questions', function() {
+    this.route('new');
+    this.route('show', {path: ':question_id'});
+    this.route('edit', {path: ':question_id/edit'});
+  });
+  this.resource('surveys', function() {
+    this.route('new');
+    this.route('show', {path: ':survey_id'});
+    this.route('edit', {path: ':survey_id/edit'});
+  });
 });
 
 export default Router;
